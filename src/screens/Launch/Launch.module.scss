@@ -1,6 +1,6 @@
 @use "../../sass/variables" as *;
 
-.Launch {
+.launch {
   width: 100%;
   min-height: 100dvh;
 
@@ -138,7 +138,7 @@
 
 /** Desktop **/
 @media (min-width: 1100px) {
-  .Launch {
+  .launch {
     gap: 4rem;
   }
 

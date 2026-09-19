@@ -12,7 +12,7 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
   return (
     <div className={styles.backdrop} onClick={onClose}>
       <div
-        className={styles.Modal}
+        className={styles.modal}
         role="dialog"
         aria-modal="true"
         onClick={(e) => e.stopPropagation()}

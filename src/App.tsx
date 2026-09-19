@@ -2,9 +2,9 @@ import Router from "./Router";
 
 function App() {
   return (
-    <>
+    <main>
       <Router />
-    </>
+    </main>
   );
 }
 

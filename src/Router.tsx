@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Launch from "./screens/Launch/Launch";
-import Map from "./screens/Map/Map";
+import Explore from "./screens/Explore/Explore";
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Launch />} />
-        <Route path="/explore" element={<Map />} />
+        <Route path="/explore" element={<Explore />} />
       </Routes>
     </BrowserRouter>
   );

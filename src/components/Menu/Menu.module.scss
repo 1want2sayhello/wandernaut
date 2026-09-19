@@ -1,0 +1,83 @@
+@use "../../sass//variables" as *;
+
+.menu {
+  position: absolute;
+  height: 100vh;
+  width: 45vw;
+  background-color: $black;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 100;
+
+  pointer-events: none;
+
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.open {
+  transform: translateX(0);
+
+  pointer-events: auto;
+}
+
+.menuNav {
+  position: relative;
+  background-color: rgba($white, 0.115);
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: $white;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  padding: 0.5rem;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+.menuNav .item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+
+  cursor: pointer;
+  transition: 0.225s transform ease-in-out;
+}
+
+.menuNav .item:hover {
+  transform: scale(1.1);
+}
+
+.menuNav .item img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+}
+
+.accent {
+  background-color: rgba($white, 0.115);
+  flex: 1;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accent img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import LocationModal from "./LocationModal/LocationModal";
-import wally from "../../assets/wally/wally-cover.svg";
+import wally from "../../assets/graphics/wally/wally-cover.svg";
 import lightArrow from "../../assets/icons/light-arrow.svg";
 import styles from "./Launch.module.scss";
 
@@ -9,7 +9,7 @@ const Launch = () => {
 
   return (
     <>
-      <section className={styles.Launch}>
+      <section className={styles.launch}>
         <div className={styles.header}>
           <h1> Wandernaut </h1>
           <p> Discover what's out there </p>
