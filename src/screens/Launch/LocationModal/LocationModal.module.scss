@@ -1,0 +1,62 @@
+@use "../../../sass/variables" as *;
+
+.content {
+  position: relative;
+  width: 100%;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 30px;
+  width: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $black;
+}
+
+.content h2 {
+  font-family: $body-font;
+  text-transform: capitalize;
+}
+
+.pillBtn {
+  width: 160px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 1.2rem;
+  text-align: center;
+  color: $white;
+  background-color: $black;
+
+  transition: 0.2s border ease-in-out;
+}
+
+.pillBtn:hover {
+  color: $black;
+  background-color: transparent;
+  border: 3px solid $black;
+}
+
+.backBtn {
+  background-color: transparent;
+  border-radius: none;
+  transition: 0.2s text-decoration ease-in-out;
+  margin-top: 1.2rem;
+}
+
+.backBtn:hover {
+  text-decoration: underline;
+}
