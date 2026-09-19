@@ -19,8 +19,10 @@ const Explore = () => {
   return (
     <section className={styles.explore}>
       <button type="button" className={styles.createPlotBtn}>
-        <img src={plotIcon} alt="" />
-        <img className={styles.addIcon} src={addIcon} alt="" />
+        <span className={styles.iconContainer}>
+          <img src={plotIcon} alt="" />
+          <img className={styles.addIcon} src={addIcon} alt="" />
+        </span>
       </button>
       <button
         type="button"
