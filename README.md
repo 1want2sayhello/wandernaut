@@ -12,9 +12,9 @@ Live Link 🔗: [TBE]
 
 **_Finding something fun to do can take more planning than it should._**
 
-❌ Activities, events, and costs are scattered throughout different platforms, making it difficult to explore what's nearby while knowing what an outing may cost.
+Activities, events, and costs are scattered throughout different platforms, making it difficult to explore what's nearby while knowing what an outing may cost. ❌
 
-**Goal ✅**: Encourage people to explore by bringing together budgeting, local discovery, and outing planning with a fun, approachable and intuitive app - _Wandernaut_.
+**Goal**: Encourage people to explore by bringing together budgeting, local discovery, and outing planning with a fun, approachable and intuitive app - _Wandernaut_. ✅
 
 ## Built with 🥞
 
