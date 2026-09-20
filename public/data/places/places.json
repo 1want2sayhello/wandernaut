@@ -1,0 +1,1050 @@
+[
+  {
+    "id": "bluebeard",
+    "name": "Bluebeard",
+    "categories": ["restaurant", "bar"],
+    "markerType": "restaurant",
+    "tags": ["american", "contemporary", "date-night", "cocktails", "local"],
+    "description": "Contemporary American restaurant serving seasonal dishes, wine and cocktails in the historic Holy Rosary neighborhood.",
+    "location": {
+      "address": "653 Virginia Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46203",
+      "coordinates": {
+        "lat": 39.7584,
+        "lng": -86.1463
+      }
+    },
+    "cost": {
+      "min": 30,
+      "max": 60
+    },
+    "website": "https://bluebeardindy.com",
+    "featured": true
+  },
+  {
+    "id": "the-eagle-mass-ave",
+    "name": "The Eagle",
+    "categories": ["restaurant", "bar"],
+    "markerType": "restaurant",
+    "tags": ["southern", "fried-chicken", "casual", "groups", "mass-ave"],
+    "description": "Southern-inspired restaurant and beer hall known for fried chicken, shareable sides and a lively atmosphere.",
+    "location": {
+      "address": "310 Massachusetts Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7719,
+        "lng": -86.1535
+      }
+    },
+    "cost": {
+      "min": 20,
+      "max": 40
+    },
+    "website": "https://www.eaglerestaurant.com",
+    "featured": true
+  },
+  {
+    "id": "livery",
+    "name": "Livery",
+    "categories": ["restaurant", "bar"],
+    "markerType": "restaurant",
+    "tags": [
+      "latin-american",
+      "cocktails",
+      "rooftop",
+      "date-night",
+      "mass-ave"
+    ],
+    "description": "Latin-inspired restaurant and cocktail bar housed in a restored former horse stable with rooftop seating.",
+    "location": {
+      "address": "720 N College Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46202",
+      "coordinates": {
+        "lat": 39.7777,
+        "lng": -86.1452
+      }
+    },
+    "cost": {
+      "min": 25,
+      "max": 50
+    },
+    "featured": true
+  },
+  {
+    "id": "the-garage-food-hall",
+    "name": "The Garage Food Hall",
+    "categories": ["restaurant", "bar", "entertainment"],
+    "markerType": "restaurant",
+    "tags": [
+      "food-hall",
+      "casual",
+      "groups",
+      "variety",
+      "bottleworks",
+      "mass-ave"
+    ],
+    "description": "A large food hall in the Bottleworks District featuring local food vendors, drinks and communal gathering spaces.",
+    "location": {
+      "address": "906 Carrollton Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46202",
+      "coordinates": {
+        "lat": 39.7802,
+        "lng": -86.1434
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 35
+    },
+    "website": "https://www.garageindy.com",
+    "featured": true
+  },
+  {
+    "id": "bodhi",
+    "name": "BODHI",
+    "categories": ["restaurant", "bar"],
+    "markerType": "restaurant",
+    "tags": ["thai", "cocktails", "21-plus", "date-night", "mass-ave"],
+    "description": "A locally owned Thai bistro and craft cocktail bar serving Thai cuisine and seasonal drinks on Mass Ave.",
+    "location": {
+      "address": "922 Massachusetts Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46202",
+      "coordinates": {
+        "lat": 39.7808,
+        "lng": -86.1427
+      }
+    },
+    "cost": {
+      "min": 25,
+      "max": 50
+    },
+    "website": "https://www.bodhi-indy.com",
+    "featured": false
+  },
+  {
+    "id": "thai-paradise",
+    "name": "Thai Paradise",
+    "categories": ["restaurant"],
+    "markerType": "restaurant",
+    "tags": ["thai", "casual", "downtown", "lunch", "dinner"],
+    "description": "Casual downtown Thai restaurant serving curries, noodles, fried rice and other classic Thai dishes.",
+    "location": {
+      "address": "137 W Market St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7683,
+        "lng": -86.1621
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 30
+    },
+    "featured": false
+  },
+  {
+    "id": "commission-row",
+    "name": "Commission Row",
+    "categories": ["restaurant", "bar"],
+    "markerType": "restaurant",
+    "tags": [
+      "steakhouse",
+      "seafood",
+      "upscale",
+      "date-night",
+      "gainbridge",
+      "special-occasion"
+    ],
+    "description": "Upscale steak and seafood restaurant near Gainbridge Fieldhouse with a raw bar and cocktail program.",
+    "location": {
+      "address": "110 S Delaware St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7654,
+        "lng": -86.1546
+      }
+    },
+    "cost": {
+      "min": 50,
+      "max": 100
+    },
+    "featured": false
+  },
+  {
+    "id": "weber-grill",
+    "name": "Weber Grill Restaurant",
+    "categories": ["restaurant", "bar"],
+    "markerType": "restaurant",
+    "tags": ["american", "barbecue", "steak", "casual", "downtown"],
+    "description": "Downtown American grill centered around charcoal-grilled steaks, barbecue and classic comfort food.",
+    "location": {
+      "address": "10 N Illinois St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7684,
+        "lng": -86.1597
+      }
+    },
+    "cost": {
+      "min": 25,
+      "max": 50
+    },
+    "featured": false
+  },
+
+  {
+    "id": "ball-and-biscuit",
+    "name": "Ball & Biscuit",
+    "categories": ["bar"],
+    "markerType": "bar",
+    "tags": ["cocktails", "lounge", "21-plus", "date-night", "mass-ave"],
+    "description": "A Mass Ave cocktail bar and lounge specializing in classic and creative craft cocktails with shareable small plates.",
+    "location": {
+      "address": "331 Massachusetts Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7716,
+        "lng": -86.1532
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 40
+    },
+    "website": "https://ballandbiscuit.com",
+    "featured": true
+  },
+  {
+    "id": "the-exchange",
+    "name": "The Exchange Bar",
+    "categories": ["bar"],
+    "markerType": "bar",
+    "tags": ["cocktails", "whiskey", "speakeasy", "21-plus", "mass-ave"],
+    "description": "A cocktail and whiskey bar on Mass Ave with a speakeasy-inspired atmosphere and extensive whiskey selection.",
+    "location": {
+      "address": "301 Massachusetts Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7712,
+        "lng": -86.1537
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 40
+    },
+    "featured": false
+  },
+  {
+    "id": "nowhere-special",
+    "name": "Nowhere Special",
+    "categories": ["bar"],
+    "markerType": "bar",
+    "tags": ["cocktails", "lounge", "speakeasy", "date-night", "mass-ave"],
+    "description": "A basement cocktail lounge on Mass Ave with a dim, intimate atmosphere geared toward cocktails and late-night drinks.",
+    "location": {
+      "address": "608 Massachusetts Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7753,
+        "lng": -86.1485
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 35
+    },
+    "featured": false
+  },
+  {
+    "id": "wiseguy-lounge",
+    "name": "Wiseguy Lounge",
+    "categories": ["bar", "restaurant"],
+    "markerType": "bar",
+    "tags": ["cocktails", "bourbon", "speakeasy", "pizza", "mass-ave"],
+    "description": "A speakeasy-style cocktail and bourbon lounge tucked inside Goodfellas Pizzeria on Mass Ave.",
+    "location": {
+      "address": "545 Massachusetts Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7744,
+        "lng": -86.1495
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 40
+    },
+    "featured": true
+  },
+  {
+    "id": "1933-lounge",
+    "name": "1933 Lounge",
+    "categories": ["bar"],
+    "markerType": "bar",
+    "tags": ["cocktails", "lounge", "upscale", "date-night", "downtown"],
+    "description": "An upscale downtown cocktail lounge associated with St. Elmo Steak House, offering cocktails and steakhouse-inspired bites.",
+    "location": {
+      "address": "127 S Illinois St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46225",
+      "coordinates": {
+        "lat": 39.7649,
+        "lng": -86.1595
+      }
+    },
+    "cost": {
+      "min": 25,
+      "max": 60
+    },
+    "featured": false
+  },
+  {
+    "id": "nicky-blaines",
+    "name": "Nicky Blaine's Cocktail Lounge",
+    "categories": ["bar", "nightlife"],
+    "markerType": "bar",
+    "tags": ["cocktails", "cigars", "lounge", "21-plus", "monument-circle"],
+    "description": "A basement cocktail and cigar lounge near Monument Circle with a retro, speakeasy-inspired atmosphere.",
+    "location": {
+      "address": "20 N Meridian St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7685,
+        "lng": -86.1581
+      }
+    },
+    "cost": {
+      "min": 20,
+      "max": 50
+    },
+    "featured": false
+  },
+  {
+    "id": "metro-indy",
+    "name": "Metro",
+    "categories": ["nightlife", "bar"],
+    "markerType": "nightlife",
+    "tags": ["nightclub", "dancing", "dj", "karaoke", "late-night"],
+    "description": "A long-running Mass Ave nightclub with DJs, dancing, karaoke, a second-floor club space, and an outdoor patio.",
+    "location": {
+      "address": "707 Massachusetts Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7764,
+        "lng": -86.1468
+      }
+    },
+    "cost": {
+      "min": 10,
+      "max": 40
+    },
+    "website": "https://metro-indy.com/",
+    "featured": true
+  },
+  {
+    "id": "gregs-indy",
+    "name": "Gregs Indy",
+    "categories": ["nightlife", "bar"],
+    "markerType": "nightlife",
+    "tags": ["nightclub", "dancing", "dj", "drag", "karaoke"],
+    "description": "A multi-room nightlife venue with a dedicated dance floor, DJs, drag performances, karaoke, pool, darts, and an outdoor patio.",
+    "location": {
+      "address": "231 E 16th St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46202",
+      "coordinates": {
+        "lat": 39.7882,
+        "lng": -86.153
+      }
+    },
+    "cost": {
+      "min": 10,
+      "max": 40
+    },
+    "website": "https://www.gregsourplace.com/",
+    "featured": true
+  },
+  {
+    "id": "tini",
+    "name": "Tini",
+    "categories": ["nightlife", "bar"],
+    "markerType": "nightlife",
+    "tags": ["cocktails", "dancing", "dj", "late-night", "mass-ave"],
+    "description": "A Mass Ave cocktail bar that shifts into a lively, DJ-driven dance spot later in the evening.",
+    "location": {
+      "address": "717 Massachusetts Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7766081,
+        "lng": -86.1465096
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 45
+    },
+    "featured": true
+  },
+  {
+    "id": "red-room",
+    "name": "The Red Room",
+    "categories": ["nightlife", "bar"],
+    "markerType": "nightlife",
+    "tags": ["nightclub", "dancing", "dj", "salsa", "broad-ripple"],
+    "description": "A Broad Ripple dance club and lounge with weekend nightlife, DJs, an open dance floor, and salsa nights.",
+    "location": {
+      "address": "6335 N Guilford Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46220",
+      "coordinates": {
+        "lat": 39.8704,
+        "lng": -86.1424
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 50
+    },
+    "website": "http://www.theredroomindy.com/",
+    "featured": false
+  },
+  {
+    "id": "the-vogue",
+    "name": "The Vogue Theatre",
+    "categories": ["nightlife", "attractions"],
+    "markerType": "nightlife",
+    "tags": ["live-music", "concerts", "dancing", "dj", "broad-ripple"],
+    "description": "A historic Broad Ripple music venue and nightclub hosting concerts, DJs, themed dance nights, and special events.",
+    "location": {
+      "address": "6259 N College Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46220",
+      "coordinates": {
+        "lat": 39.8692,
+        "lng": -86.1458
+      }
+    },
+    "cost": {
+      "min": 20,
+      "max": 60
+    },
+    "website": "https://thevogue.com/",
+    "featured": true
+  },
+  {
+    "id": "howl-at-the-moon",
+    "name": "Howl at the Moon",
+    "categories": ["nightlife", "bar"],
+    "markerType": "nightlife",
+    "tags": ["live-music", "dancing", "piano-bar", "party", "downtown"],
+    "description": "An energetic downtown live-music and party venue built around interactive performances, drinks, singing, and dancing.",
+    "location": {
+      "address": "20 E Georgia St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7645,
+        "lng": -86.1574
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 50
+    },
+    "website": "https://www.howlatthemoon.com/indianapolis/",
+    "featured": false
+  },
+  {
+    "id": "white-rabbit-cabaret",
+    "name": "White Rabbit Cabaret",
+    "categories": ["nightlife", "bar", "attractions"],
+    "markerType": "nightlife",
+    "tags": [
+      "cabaret",
+      "drag",
+      "burlesque",
+      "dj",
+      "dancing",
+      "fountain-square"
+    ],
+    "description": "An intimate Fountain Square venue with an eclectic calendar of cabaret, drag, burlesque, live music, comedy, and dance nights.",
+    "location": {
+      "address": "1116 Prospect St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46203",
+      "coordinates": {
+        "lat": 39.7523,
+        "lng": -86.139
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 40
+    },
+    "website": "https://www.whiterabbitcabaret.com/",
+    "featured": false
+  },
+  {
+    "id": "8-seconds-saloon",
+    "name": "8 Seconds Saloon",
+    "categories": ["nightlife", "bar"],
+    "markerType": "nightlife",
+    "tags": ["country", "dancing", "live-music", "concerts", "western"],
+    "description": "A large country-focused nightclub and live music venue with dancing, DJs, concerts, and special events.",
+    "location": {
+      "address": "111 N Lynhurst Dr",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46224",
+      "coordinates": {
+        "lat": 39.7695,
+        "lng": -86.2505
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 50
+    },
+    "website": "https://8secondssaloon.net/",
+    "featured": false
+  },
+  {
+    "id": "icon-lounge",
+    "name": "ICON Lounge",
+    "categories": ["nightlife", "bar"],
+    "markerType": "nightlife",
+    "tags": ["nightclub", "dancing", "dj", "lounge", "downtown"],
+    "description": "A downtown late-night lounge and nightclub near Monument Circle with DJs, drinks, and dancing.",
+    "location": {
+      "address": "148 E Market St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7683,
+        "lng": -86.1538
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 50
+    },
+    "featured": false
+  },
+  {
+    "id": "morrison-lounge",
+    "name": "Morrison Lounge",
+    "categories": ["nightlife", "bar"],
+    "markerType": "nightlife",
+    "tags": ["nightclub", "lounge", "music", "dancing", "downtown"],
+    "description": "A downtown Meridian Street lounge with music, nightlife programming, drinks, and a late-night atmosphere.",
+    "location": {
+      "address": "47 S Meridian St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7659,
+        "lng": -86.158
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 50
+    },
+    "featured": false
+  },
+
+  {
+    "id": "starbucks-s-meridian",
+    "name": "Starbucks",
+    "categories": ["cafe"],
+    "markerType": "cafe",
+    "tags": ["coffee", "tea", "breakfast", "chain", "downtown"],
+    "description": "Downtown coffee shop serving espresso drinks, tea, breakfast items and light food.",
+    "location": {
+      "address": "30 S Meridian St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7658,
+        "lng": -86.1581
+      }
+    },
+    "cost": {
+      "min": 5,
+      "max": 20
+    },
+    "featured": false
+  },
+  {
+    "id": "7-brew-s-east",
+    "name": "7 Brew Coffee",
+    "categories": ["cafe"],
+    "markerType": "cafe",
+    "tags": ["coffee", "energy-drinks", "drive-thru", "chain"],
+    "description": "Drive-thru coffee stand serving coffee, flavored espresso drinks, teas, smoothies and energy drinks.",
+    "location": {
+      "address": "3710 S East St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46227",
+      "coordinates": {
+        "lat": 39.7116,
+        "lng": -86.1491
+      }
+    },
+    "cost": {
+      "min": 5,
+      "max": 15
+    },
+    "featured": false
+  },
+  {
+    "id": "amberson-coffee",
+    "name": "Amberson Coffee & Grocer",
+    "categories": ["cafe"],
+    "markerType": "cafe",
+    "tags": ["coffee", "pastries", "breakfast", "local"],
+    "description": "Independent neighborhood coffee shop and grocer serving specialty coffee, breakfast and pastries.",
+    "location": {
+      "address": "401 S College Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46203",
+      "coordinates": {
+        "lat": 39.7608,
+        "lng": -86.1457
+      }
+    },
+    "cost": {
+      "min": 5,
+      "max": 20
+    },
+    "featured": true
+  },
+  {
+    "id": "calvin-fletchers-coffee",
+    "name": "Calvin Fletcher's Coffee Company",
+    "categories": ["cafe"],
+    "markerType": "cafe",
+    "tags": ["coffee", "pastries", "local", "work-friendly"],
+    "description": "Fletcher Place neighborhood coffee shop serving locally roasted coffee, espresso drinks and pastries.",
+    "location": {
+      "address": "647 Virginia Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46203",
+      "coordinates": {
+        "lat": 39.7578,
+        "lng": -86.1462
+      }
+    },
+    "cost": {
+      "min": 5,
+      "max": 20
+    },
+    "featured": true
+  },
+  {
+    "id": "bovaconti-coffee",
+    "name": "Bovaconti Coffee",
+    "categories": ["cafe"],
+    "markerType": "cafe",
+    "tags": [
+      "coffee",
+      "pastries",
+      "local",
+      "outdoor-seating",
+      "fountain-square"
+    ],
+    "description": "Fountain Square coffee shop serving specialty coffee, espresso drinks, tea and pastries.",
+    "location": {
+      "address": "1042 Virginia Ave",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46203",
+      "coordinates": {
+        "lat": 39.7531,
+        "lng": -86.1403
+      }
+    },
+    "cost": {
+      "min": 5,
+      "max": 20
+    },
+    "featured": true
+  },
+  {
+    "id": "coat-check-coffee",
+    "name": "Coat Check Coffee",
+    "categories": ["cafe"],
+    "markerType": "cafe",
+    "tags": ["coffee", "pastries", "local", "historic", "mass-ave"],
+    "description": "Coffee shop inside the historic Athenaeum serving espresso drinks, coffee and pastries near Mass Ave.",
+    "location": {
+      "address": "401 E Michigan St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7742,
+        "lng": -86.1501
+      }
+    },
+    "cost": {
+      "min": 5,
+      "max": 20
+    },
+    "featured": true
+  },
+  {
+    "id": "command-coffee-monument-circle",
+    "name": "Command Coffee",
+    "categories": ["cafe"],
+    "markerType": "cafe",
+    "tags": ["coffee", "breakfast", "local", "downtown", "monument-circle"],
+    "description": "Locally owned coffee shop on Monument Circle serving coffee, espresso drinks and breakfast items.",
+    "location": {
+      "address": "55 Monument Cir #59",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7685,
+        "lng": -86.158
+      }
+    },
+    "cost": {
+      "min": 5,
+      "max": 20
+    },
+    "featured": true
+  },
+
+  {
+    "id": "indianapolis-zoo",
+    "name": "Indianapolis Zoo",
+    "categories": ["attractions"],
+    "markerType": "attractions",
+    "tags": [
+      "zoo",
+      "animals",
+      "aquarium",
+      "gardens",
+      "family",
+      "white-river-state-park"
+    ],
+    "description": "Major Indianapolis attraction combining a zoo, aquarium and botanical garden with animal exhibits and interactive experiences.",
+    "location": {
+      "address": "1200 W Washington St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46222",
+      "coordinates": {
+        "lat": 39.7675,
+        "lng": -86.1809
+      }
+    },
+    "cost": {
+      "min": 20,
+      "max": 40
+    },
+    "website": "https://www.indianapoliszoo.com/",
+    "featured": true
+  },
+  {
+    "id": "indiana-state-museum",
+    "name": "Indiana State Museum",
+    "categories": ["attractions"],
+    "markerType": "attractions",
+    "tags": [
+      "museum",
+      "history",
+      "science",
+      "culture",
+      "family",
+      "downtown",
+      "white-river-state-park"
+    ],
+    "description": "Museum exploring Indiana's history, science, art and culture through permanent collections, rotating exhibits and interactive experiences.",
+    "location": {
+      "address": "650 W Washington St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7668,
+        "lng": -86.1694
+      }
+    },
+    "cost": {
+      "min": 17,
+      "max": 23
+    },
+    "website": "https://www.indianamuseum.org/",
+    "featured": true
+  },
+  {
+    "id": "eiteljorg-museum",
+    "name": "Eiteljorg Museum",
+    "categories": ["attractions"],
+    "markerType": "attractions",
+    "tags": [
+      "museum",
+      "art",
+      "native-american",
+      "american-west",
+      "culture",
+      "downtown",
+      "white-river-state-park"
+    ],
+    "description": "Museum featuring Native American and Western art, history and cultural collections alongside contemporary exhibitions.",
+    "location": {
+      "address": "500 W Washington St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.768,
+        "lng": -86.167
+      }
+    },
+    "cost": {
+      "min": 12,
+      "max": 20
+    },
+    "website": "https://eiteljorg.org/",
+    "featured": true
+  },
+  {
+    "id": "newfields",
+    "name": "Newfields",
+    "categories": ["attractions"],
+    "markerType": "attractions",
+    "tags": [
+      "museum",
+      "art",
+      "gardens",
+      "nature",
+      "culture",
+      "date-day",
+      "outdoor"
+    ],
+    "description": "Art and nature campus featuring the Indianapolis Museum of Art, extensive gardens, Lilly House and seasonal exhibitions and events.",
+    "location": {
+      "address": "4000 Michigan Rd",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46208",
+      "coordinates": {
+        "lat": 39.82546,
+        "lng": -86.18514
+      }
+    },
+    "cost": {
+      "min": 15,
+      "max": 23
+    },
+    "website": "https://discovernewfields.org/",
+    "featured": true
+  },
+  {
+    "id": "childrens-museum-indianapolis",
+    "name": "The Children's Museum of Indianapolis",
+    "categories": ["attractions"],
+    "markerType": "attractions",
+    "tags": [
+      "museum",
+      "family",
+      "kids",
+      "science",
+      "history",
+      "interactive",
+      "sports"
+    ],
+    "description": "Large interactive children's museum featuring science, history, culture, dinosaurs and the outdoor Sports Legends Experience.",
+    "location": {
+      "address": "3000 N Meridian St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46208",
+      "coordinates": {
+        "lat": 39.81082,
+        "lng": -86.15837
+      }
+    },
+    "cost": {
+      "min": 20,
+      "max": 40
+    },
+    "website": "https://www.childrensmuseum.org/",
+    "featured": true
+  },
+  {
+    "id": "ims-museum",
+    "name": "Indianapolis Motor Speedway Museum",
+    "categories": ["attractions"],
+    "markerType": "attractions",
+    "tags": [
+      "museum",
+      "motorsports",
+      "indy-500",
+      "cars",
+      "history",
+      "speedway"
+    ],
+    "description": "Motorsports museum inside Indianapolis Motor Speedway exploring the history of the Indy 500 through historic cars, artifacts and interactive exhibits.",
+    "location": {
+      "address": "4750 W 16th St",
+      "city": "Speedway",
+      "state": "IN",
+      "zipCode": "46222",
+      "coordinates": {
+        "lat": 39.78996,
+        "lng": -86.23362
+      }
+    },
+    "cost": {
+      "min": 18,
+      "max": 25
+    },
+    "website": "https://imsmuseum.org/",
+    "featured": true
+  },
+  {
+    "id": "soldiers-sailors-monument",
+    "name": "Soldiers & Sailors Monument",
+    "categories": ["attractions"],
+    "markerType": "attractions",
+    "tags": [
+      "landmark",
+      "monument",
+      "history",
+      "architecture",
+      "downtown",
+      "monument-circle",
+      "free"
+    ],
+    "description": "Iconic limestone monument at the center of downtown Indianapolis honoring Indiana veterans and serving as the centerpiece of Monument Circle.",
+    "location": {
+      "address": "1 Monument Cir",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7685,
+        "lng": -86.158
+      }
+    },
+    "cost": {
+      "min": 0,
+      "max": 0
+    },
+    "website": "https://www.indianawarmemorials.org/",
+    "featured": true
+  },
+  {
+    "id": "white-river-state-park",
+    "name": "White River State Park",
+    "categories": ["attractions"],
+    "markerType": "attractions",
+    "tags": [
+      "park",
+      "outdoor",
+      "walking",
+      "downtown",
+      "free",
+      "scenic",
+      "white-river"
+    ],
+    "description": "Downtown urban state park connecting museums, green spaces, trails, public art and attractions along the White River.",
+    "location": {
+      "address": "801 W Washington St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7667,
+        "lng": -86.1725
+      }
+    },
+    "cost": {
+      "min": 0,
+      "max": 0
+    },
+    "website": "https://whiteriverstatepark.org/",
+    "featured": true
+  },
+  {
+    "id": "indianapolis-canal-walk",
+    "name": "Indianapolis Canal Walk",
+    "categories": ["attractions"],
+    "markerType": "attractions",
+    "tags": [
+      "outdoor",
+      "walking",
+      "biking",
+      "scenic",
+      "downtown",
+      "free",
+      "canal",
+      "date-day"
+    ],
+    "description": "Downtown waterfront promenade along the Indiana Central Canal popular for walking, running, biking, sightseeing and waterside activities.",
+    "location": {
+      "address": "801 W Washington St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7692,
+        "lng": -86.169
+      }
+    },
+    "cost": {
+      "min": 0,
+      "max": 0
+    },
+    "website": "https://www.visitindy.com/directory/canal-walk/",
+    "featured": true
+  }
+]

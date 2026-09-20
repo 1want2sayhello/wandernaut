@@ -1,0 +1,435 @@
+[
+  {
+    "id": "indy-jazz-fest-finale-2026",
+    "name": "Indy Jazz Fest Finale",
+    "categories": ["live-music", "festival"],
+    "markerType": "event",
+    "tags": ["jazz", "funk", "soul", "festival", "local"],
+    "description": "The finale of the 2026 Indy Jazz Fest featuring a full lineup of jazz, funk and soul performers.",
+    "venue": {
+      "id": "indy-jazz-fest-broad-ripple",
+      "name": "Indy Jazz Fest Finale",
+      "city": "Indianapolis",
+      "state": "IN",
+      "coordinates": {
+        "lat": 39.8697,
+        "lng": -86.1417
+      }
+    },
+    "schedule": {
+      "start": "2026-09-26T12:00:00",
+      "end": "2026-09-26T23:00:00"
+    },
+    "cost": {
+      "min": 15,
+      "max": 73
+    },
+    "featured": true
+  },
+  {
+    "id": "cash-money-no-limit-tour-2026",
+    "name": "Cash Money and No Limit Records Tour",
+    "categories": ["live-music", "concert"],
+    "markerType": "event",
+    "tags": ["hip-hop", "rap", "concert", "downtown"],
+    "description": "Hip-hop concert featuring artists from Cash Money and No Limit Records.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-09-26T20:00:00",
+      "end": null
+    },
+    "cost": {
+      "min": 40,
+      "max": 200
+    },
+    "featured": true
+  },
+  {
+    "id": "johnny-blue-skies-2026",
+    "name": "Johnny Blue Skies",
+    "categories": ["live-music", "concert"],
+    "markerType": "event",
+    "tags": ["concert", "country", "rock", "downtown"],
+    "description": "Johnny Blue Skies brings the Mutiny For The Masses Tour to Gainbridge Fieldhouse.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-10-03T20:00:00",
+      "end": null
+    },
+    "cost": {
+      "min": 40,
+      "max": 150
+    },
+    "featured": true
+  },
+  {
+    "id": "coco-screening-gainbridge-2026",
+    "name": "Coco Movie Screening",
+    "categories": ["film", "family"],
+    "markerType": "event",
+    "tags": ["movie", "family", "disney", "free", "downtown"],
+    "description": "Free community screening of Disney and Pixar's Coco at Gainbridge Fieldhouse.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-10-08T18:30:00",
+      "end": null
+    },
+    "cost": {
+      "min": 0,
+      "max": 0
+    },
+    "featured": true
+  },
+  {
+    "id": "pacers-hawks-preseason-2026",
+    "name": "Indiana Pacers vs. Atlanta Hawks",
+    "categories": ["sports", "basketball"],
+    "markerType": "event",
+    "tags": ["nba", "pacers", "basketball", "sports", "downtown"],
+    "description": "NBA preseason matchup between the Indiana Pacers and Atlanta Hawks.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-10-10T19:00:00",
+      "end": null
+    },
+    "cost": {
+      "min": null,
+      "max": null
+    },
+    "featured": false
+  },
+  {
+    "id": "jonas-brothers-indianapolis-2026",
+    "name": "Jonas Brothers",
+    "categories": ["live-music", "concert"],
+    "markerType": "event",
+    "tags": ["pop", "concert", "downtown"],
+    "description": "The Jonas Brothers bring their 2026 tour to downtown Indianapolis.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-10-15T19:30:00",
+      "end": null
+    },
+    "cost": {
+      "min": null,
+      "max": null
+    },
+    "featured": true
+  },
+  {
+    "id": "indiana-north-carolina-basketball-2026",
+    "name": "Indiana vs. North Carolina",
+    "categories": ["sports", "basketball"],
+    "markerType": "event",
+    "tags": ["college-basketball", "sports", "basketball", "downtown"],
+    "description": "College basketball matchup between Indiana and North Carolina at Gainbridge Fieldhouse.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-10-18T17:00:00",
+      "end": null
+    },
+    "cost": {
+      "min": null,
+      "max": null
+    },
+    "featured": true
+  },
+  {
+    "id": "smashing-pumpkins-indianapolis-2026",
+    "name": "The Smashing Pumpkins",
+    "categories": ["live-music", "concert"],
+    "markerType": "event",
+    "tags": ["rock", "alternative", "concert", "downtown"],
+    "description": "The Smashing Pumpkins perform live at Gainbridge Fieldhouse.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-10-20T20:00:00",
+      "end": null
+    },
+    "cost": {
+      "min": null,
+      "max": null
+    },
+    "featured": true
+  },
+  {
+    "id": "pacers-mavericks-2026",
+    "name": "Indiana Pacers vs. Dallas Mavericks",
+    "categories": ["sports", "basketball"],
+    "markerType": "event",
+    "tags": ["nba", "pacers", "basketball", "sports", "downtown"],
+    "description": "Indiana Pacers regular-season home game against the Dallas Mavericks.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-10-23T19:00:00",
+      "end": null
+    },
+    "cost": {
+      "min": null,
+      "max": null
+    },
+    "featured": false
+  },
+  {
+    "id": "worlds-collide-indianapolis-2026",
+    "name": "Disney Worlds Collide Concert Tour",
+    "categories": ["live-music", "family"],
+    "markerType": "event",
+    "tags": ["disney", "concert", "family", "downtown"],
+    "description": "Disney's Worlds Collide concert tour brings performers and music from Descendants, ZOMBIES and Camp Rock to Indianapolis.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-10-27T19:00:00",
+      "end": null
+    },
+    "cost": {
+      "min": null,
+      "max": null
+    },
+    "featured": false
+  },
+  {
+    "id": "pacers-76ers-2026",
+    "name": "Indiana Pacers vs. Philadelphia 76ers",
+    "categories": ["sports", "basketball"],
+    "markerType": "event",
+    "tags": ["nba", "pacers", "basketball", "sports", "downtown"],
+    "description": "Indiana Pacers regular-season home game against the Philadelphia 76ers.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-10-28T19:00:00",
+      "end": null
+    },
+    "cost": {
+      "min": null,
+      "max": null
+    },
+    "featured": false
+  },
+  {
+    "id": "pacers-nets-2026",
+    "name": "Indiana Pacers vs. Brooklyn Nets",
+    "categories": ["sports", "basketball"],
+    "markerType": "event",
+    "tags": ["nba", "pacers", "basketball", "sports", "downtown"],
+    "description": "Indiana Pacers regular-season home game against the Brooklyn Nets.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-11-01T17:00:00",
+      "end": null
+    },
+    "cost": {
+      "min": null,
+      "max": null
+    },
+    "featured": false
+  },
+  {
+    "id": "pacers-hawks-2026",
+    "name": "Indiana Pacers vs. Atlanta Hawks",
+    "categories": ["sports", "basketball"],
+    "markerType": "event",
+    "tags": ["nba", "pacers", "basketball", "sports", "downtown"],
+    "description": "Indiana Pacers regular-season home game against the Atlanta Hawks.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-11-02T19:30:00",
+      "end": null
+    },
+    "cost": {
+      "min": null,
+      "max": null
+    },
+    "featured": false
+  },
+  {
+    "id": "three-days-grace-indianapolis-2026",
+    "name": "Three Days Grace",
+    "categories": ["live-music", "concert"],
+    "markerType": "event",
+    "tags": ["rock", "concert", "downtown"],
+    "description": "Three Days Grace brings the Alienation Tour to Gainbridge Fieldhouse.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-11-04T19:00:00",
+      "end": null
+    },
+    "cost": {
+      "min": null,
+      "max": null
+    },
+    "featured": true
+  },
+  {
+    "id": "sombr-indianapolis-2026",
+    "name": "SOMBR",
+    "categories": ["live-music", "concert"],
+    "markerType": "event",
+    "tags": ["concert", "alternative", "pop", "downtown"],
+    "description": "SOMBR brings the You Are The Reason Tour to Gainbridge Fieldhouse.",
+    "venue": {
+      "id": "gainbridge-fieldhouse",
+      "name": "Gainbridge Fieldhouse",
+      "address": "125 S Pennsylvania St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zipCode": "46204",
+      "coordinates": {
+        "lat": 39.7639,
+        "lng": -86.1555
+      }
+    },
+    "schedule": {
+      "start": "2026-11-06T19:00:00",
+      "end": null
+    },
+    "cost": {
+      "min": null,
+      "max": null
+    },
+    "featured": true
+  }
+]
