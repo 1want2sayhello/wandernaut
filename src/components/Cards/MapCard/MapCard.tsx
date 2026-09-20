@@ -19,7 +19,12 @@ type MapCardProps = {
 const MapCard = ({ item, onClose }: MapCardProps) => {
   return (
     <div className={styles.mapCard}>
-      <button type="button" onClick={onClose} aria-label="Close">
+      <button
+        type="button"
+        className={styles.closeBtn}
+        onClick={onClose}
+        aria-label="Close"
+      >
         X
       </button>
       <div className={styles.cardImg}>

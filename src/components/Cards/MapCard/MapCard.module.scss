@@ -14,5 +14,26 @@
   border: 4px solid $black;
   border-radius: 10px;
 
-  z-index: 9999;
+  z-index: 30;
+}
+
+.closeBtn {
+  width: 100%;
+  text-align: right;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+}
+
+.cardImg {
+  width: 100%;
+  height: 120px;
+  border: 2px solid $black;
+  margin-bottom: 0.8rem;
+}
+
+.cardImg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
