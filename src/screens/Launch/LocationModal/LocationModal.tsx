@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { getCurrentLocation } from "../../../utils/currentLocation";
 import styles from "./LocationModal.module.scss";
 import Modal from "../../../components/Modal/Modal";
 
@@ -10,8 +11,16 @@ type LocationModalProps = {
 const LocationModal = ({ isOpen, onClose }: LocationModalProps) => {
   const navigate = useNavigate();
 
-  const handleContinue = () => {
-    navigate("/explore");
+  const handleUserLocation = async () => {
+    try {
+      const userLocation = await getCurrentLocation();
+
+      navigate("/explore", {
+        state: { userLocation },
+      });
+    } catch (error) {
+      console.error("unable to get location:", error);
+    }
   };
 
   return (
@@ -24,14 +33,14 @@ const LocationModal = ({ isOpen, onClose }: LocationModalProps) => {
         <button
           type="button"
           className={styles.pillBtn}
-          onClick={handleContinue}
+          onClick={handleUserLocation}
         >
           Use My Location
         </button>
         <button
           type="button"
           className={styles.pillBtn}
-          onClick={handleContinue}
+          onClick={handleUserLocation}
         >
           Select a City
         </button>

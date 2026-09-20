@@ -1,8 +1,12 @@
 import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
+import type { UserCoordinates } from "../../utils/currentLocation";
 import { fetchPlaces } from "../../services/placesService";
 import { fetchEvents } from "../../services/eventsService";
 import { markerIcons } from "../../utils/markerIcons";
+import userLocationMarker from "../../assets/markers/user-marker.svg";
 import { getUpcomingEvents } from "../../utils/eventFilters";
+
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
@@ -11,6 +15,11 @@ import styles from "./Map.module.scss";
 const Map = () => {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
+
+  const routerLocation = useLocation();
+  const userLocation = routerLocation.state?.userLocation as
+    | UserCoordinates
+    | undefined;
 
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
@@ -27,13 +36,34 @@ const Map = () => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: "mapbox://styles/mapbox/dark-v11",
-      center: [-86.1581, 39.7684], // Downtown Indianapolis
-      zoom: 12,
+      center: userLocation
+        ? [userLocation.lng, userLocation.lat]
+        : [-86.1581, 39.7684], // or else, center on Downtown Indianapolis
+      zoom: userLocation ? 14 : 12,
     });
 
     mapRef.current = map;
 
     map.on("load", async () => {
+      if (userLocation) {
+        const markerElement = document.createElement("div");
+        markerElement.className = styles.userMarker;
+
+        const markerImage = document.createElement("img");
+        markerImage.src = userLocationMarker;
+        markerImage.alt = "Your current location";
+        markerImage.draggable = false;
+
+        markerElement.appendChild(markerImage);
+
+        new mapboxgl.Marker({
+          element: markerElement,
+          anchor: "center",
+        })
+          .setLngLat([userLocation.lng, userLocation.lat])
+          .addTo(map);
+      }
+
       try {
         const places = await fetchPlaces();
 
@@ -100,7 +130,7 @@ const Map = () => {
       map.remove();
       mapRef.current = null;
     };
-  }, []);
+  }, [userLocation]);
 
   return <div ref={mapContainerRef} className={styles.Map} />;
 };
