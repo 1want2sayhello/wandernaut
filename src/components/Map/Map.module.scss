@@ -13,6 +13,7 @@
   border: none;
   background: transparent;
   cursor: pointer;
+  z-index: 100;
 }
 
 .marker img {
@@ -23,8 +24,8 @@
 }
 
 .userMarker {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   border: 2px solid $white;
   border-radius: 50%;
   background-color: rgba($white, 0.5);
@@ -32,11 +33,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 .userMarker img {
-  width: 42px;
-  height: 42px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
   display: block;
+  filter: drop-shadow(-1px 6px 3px $black);
 }

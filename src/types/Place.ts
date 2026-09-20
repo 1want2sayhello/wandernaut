@@ -13,7 +13,7 @@ export type Place = {
   name: string;
   categories: PlaceCategory[];
   markerType: MarkerType;
-  tags: string[];
+  attributes: string[];
   description: string;
 
   location: {
@@ -33,6 +33,6 @@ export type Place = {
   };
 
   website?: string;
-  image?: string;
+  image: string;
   featured: boolean;
 };

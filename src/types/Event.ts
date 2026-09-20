@@ -11,9 +11,10 @@ export type EventCategory =
 export type Event = {
   id: string;
   name: string;
+  image: string;
   categories: EventCategory[];
   markerType: "event";
-  tags: string[];
+  attributes: string[];
   description: string;
 
   venue: {

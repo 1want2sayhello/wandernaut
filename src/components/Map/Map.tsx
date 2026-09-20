@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import type { UserCoordinates } from "../../utils/currentLocation";
 import { fetchPlaces } from "../../services/placesService";
@@ -6,6 +6,7 @@ import { fetchEvents } from "../../services/eventsService";
 import { markerIcons } from "../../utils/markerIcons";
 import userLocationMarker from "../../assets/markers/user-marker.svg";
 import { getUpcomingEvents } from "../../utils/eventFilters";
+import MapCard, { type MapCardItem } from "../Cards/MapCard/MapCard";
 
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -13,6 +14,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import styles from "./Map.module.scss";
 
 const Map = () => {
+  const [selectedItem, setSelectedItem] = useState<MapCardItem | null>(null);
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
 
@@ -85,6 +87,17 @@ const Map = () => {
 
           markerElement.appendChild(markerImage);
 
+          markerElement.addEventListener("click", () => {
+            console.log("PLACE CLICKED:", place);
+
+            setSelectedItem({
+              image: place.image,
+              name: place.name,
+              description: place.description,
+              attributes: place.attributes,
+            });
+          });
+
           new mapboxgl.Marker({
             element: markerElement,
             anchor: "bottom",
@@ -111,6 +124,18 @@ const Map = () => {
 
           markerElement.appendChild(markerImage);
 
+          markerElement.addEventListener("click", () => {
+            console.log("EVENT CLICKED:", event);
+
+            setSelectedItem({
+              image: event.image,
+              name: event.name,
+              description: event.description,
+              schedule: event.schedule,
+              attributes: event.attributes,
+            });
+          });
+
           new mapboxgl.Marker({
             element: markerElement,
             anchor: "bottom",
@@ -132,7 +157,13 @@ const Map = () => {
     };
   }, [userLocation]);
 
-  return <div ref={mapContainerRef} className={styles.Map} />;
+  return (
+    <>
+      <div ref={mapContainerRef} className={styles.Map} />
+      {selectedItem && (
+        <MapCard item={selectedItem} onClose={() => setSelectedItem(null)} />
+      )}
+    </>
+  );
 };
-
 export default Map;

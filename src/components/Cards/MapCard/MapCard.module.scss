@@ -1,0 +1,18 @@
+@use "../../../sass/variables" as *;
+
+.mapCard {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 320px;
+  min-height: 200px;
+  padding: 1.2rem;
+
+  background: white;
+  border: 4px solid $black;
+  border-radius: 10px;
+
+  z-index: 9999;
+}

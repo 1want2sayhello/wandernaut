@@ -5,6 +5,7 @@
     "categories": ["live-music", "festival"],
     "markerType": "event",
     "tags": ["jazz", "funk", "soul", "festival", "local"],
+    "attributes": ["Live Music", "Festival", "Local"],
     "description": "The finale of the 2026 Indy Jazz Fest featuring a full lineup of jazz, funk and soul performers.",
     "venue": {
       "id": "indy-jazz-fest-broad-ripple",
@@ -32,6 +33,7 @@
     "categories": ["live-music", "concert"],
     "markerType": "event",
     "tags": ["hip-hop", "rap", "concert", "downtown"],
+    "attributes": ["Hip-Hop", "Rap", "Concert"],
     "description": "Hip-hop concert featuring artists from Cash Money and No Limit Records.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -61,6 +63,7 @@
     "categories": ["live-music", "concert"],
     "markerType": "event",
     "tags": ["concert", "country", "rock", "downtown"],
+    "attributes": ["Country", "Rock", "Concert"],
     "description": "Johnny Blue Skies brings the Mutiny For The Masses Tour to Gainbridge Fieldhouse.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -90,6 +93,7 @@
     "categories": ["film", "family"],
     "markerType": "event",
     "tags": ["movie", "family", "disney", "free", "downtown"],
+    "attributes": ["Family Friendly", "Movie", "Free"],
     "description": "Free community screening of Disney and Pixar's Coco at Gainbridge Fieldhouse.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -119,6 +123,7 @@
     "categories": ["sports", "basketball"],
     "markerType": "event",
     "tags": ["nba", "pacers", "basketball", "sports", "downtown"],
+    "attributes": ["Basketball", "NBA", "Sports"],
     "description": "NBA preseason matchup between the Indiana Pacers and Atlanta Hawks.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -148,6 +153,7 @@
     "categories": ["live-music", "concert"],
     "markerType": "event",
     "tags": ["pop", "concert", "downtown"],
+    "attributes": ["Pop", "Live Music", "Concert"],
     "description": "The Jonas Brothers bring their 2026 tour to downtown Indianapolis.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -177,6 +183,7 @@
     "categories": ["sports", "basketball"],
     "markerType": "event",
     "tags": ["college-basketball", "sports", "basketball", "downtown"],
+    "attributes": ["Basketball", "College Sports", "Sports"],
     "description": "College basketball matchup between Indiana and North Carolina at Gainbridge Fieldhouse.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -206,6 +213,7 @@
     "categories": ["live-music", "concert"],
     "markerType": "event",
     "tags": ["rock", "alternative", "concert", "downtown"],
+    "attributes": ["Rock", "Alternative", "Concert"],
     "description": "The Smashing Pumpkins perform live at Gainbridge Fieldhouse.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -235,6 +243,7 @@
     "categories": ["sports", "basketball"],
     "markerType": "event",
     "tags": ["nba", "pacers", "basketball", "sports", "downtown"],
+    "attributes": ["Basketball", "NBA", "Sports"],
     "description": "Indiana Pacers regular-season home game against the Dallas Mavericks.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -264,6 +273,7 @@
     "categories": ["live-music", "family"],
     "markerType": "event",
     "tags": ["disney", "concert", "family", "downtown"],
+    "attributes": ["Family Friendly", "Disney", "Concert"],
     "description": "Disney's Worlds Collide concert tour brings performers and music from Descendants, ZOMBIES and Camp Rock to Indianapolis.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -293,6 +303,7 @@
     "categories": ["sports", "basketball"],
     "markerType": "event",
     "tags": ["nba", "pacers", "basketball", "sports", "downtown"],
+    "attributes": ["Basketball", "NBA", "Sports"],
     "description": "Indiana Pacers regular-season home game against the Philadelphia 76ers.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -322,6 +333,7 @@
     "categories": ["sports", "basketball"],
     "markerType": "event",
     "tags": ["nba", "pacers", "basketball", "sports", "downtown"],
+    "attributes": ["Basketball", "NBA", "Sports"],
     "description": "Indiana Pacers regular-season home game against the Brooklyn Nets.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -351,6 +363,7 @@
     "categories": ["sports", "basketball"],
     "markerType": "event",
     "tags": ["nba", "pacers", "basketball", "sports", "downtown"],
+    "attributes": ["Basketball", "NBA", "Sports"],
     "description": "Indiana Pacers regular-season home game against the Atlanta Hawks.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -380,6 +393,7 @@
     "categories": ["live-music", "concert"],
     "markerType": "event",
     "tags": ["rock", "concert", "downtown"],
+    "attributes": ["Rock", "Live Music", "Concert"],
     "description": "Three Days Grace brings the Alienation Tour to Gainbridge Fieldhouse.",
     "venue": {
       "id": "gainbridge-fieldhouse",
@@ -409,6 +423,7 @@
     "categories": ["live-music", "concert"],
     "markerType": "event",
     "tags": ["concert", "alternative", "pop", "downtown"],
+    "attributes": ["Alternative", "Pop", "Concert"],
     "description": "SOMBR brings the You Are The Reason Tour to Gainbridge Fieldhouse.",
     "venue": {
       "id": "gainbridge-fieldhouse",
