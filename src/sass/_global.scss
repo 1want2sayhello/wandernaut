@@ -8,10 +8,13 @@
 
 html,
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
   background-color: $black;
+}
+
+#root {
+  height: 100dvh;
 }
 
 body {

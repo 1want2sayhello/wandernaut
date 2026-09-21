@@ -13,6 +13,11 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 import styles from "./Map.module.scss";
 
+const NA_Bounds: mapboxgl.LngLatBoundsLike = [
+  [-140, 15],
+  [-55, 70],
+];
+
 const Map = () => {
   const [selectedItem, setSelectedItem] = useState<MapCardItem | null>(null);
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
@@ -42,6 +47,8 @@ const Map = () => {
         ? [userLocation.lng, userLocation.lat]
         : [-86.1581, 39.7684], // or else, center on Downtown Indianapolis
       zoom: userLocation ? 14 : 12,
+      minZoom: 2,
+      maxBounds: NA_Bounds,
     });
 
     mapRef.current = map;
