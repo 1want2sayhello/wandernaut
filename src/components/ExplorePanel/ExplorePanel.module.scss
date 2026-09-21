@@ -2,7 +2,7 @@
 
 .explorePanel {
   position: absolute;
-  bottom: 10%;
+  bottom: calc(1rem + env(safe-area-inset-bottom));
   min-width: 100%;
   width: auto;
   height: 120px;
