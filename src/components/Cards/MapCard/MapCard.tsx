@@ -4,6 +4,7 @@ export type MapCardItem = {
   image: string;
   name: string;
   description: string;
+  cost?: { min: number | null; max: number | null };
   schedule?: {
     start: string;
     end: string | null;
@@ -19,25 +20,36 @@ type MapCardProps = {
 const MapCard = ({ item, onClose }: MapCardProps) => {
   return (
     <div className={styles.mapCard}>
-      <button
-        type="button"
-        className={styles.closeBtn}
-        onClick={onClose}
-        aria-label="Close"
-      >
-        X
-      </button>
+      <div className={styles.btnContainer}>
+        <button
+          type="button"
+          className={styles.closeBtn}
+          onClick={onClose}
+          aria-label="Close"
+        >
+          X
+        </button>
+      </div>
       <div className={styles.cardImg}>
         <img src={item.image} alt={item.name} />
       </div>
       <div className={styles.content}>
-        <h2 className={styles.name}> {item.name} </h2>
-        <div>
-          {item.attributes.map((attribute) => (
-            <span key={attribute}>{attribute}</span>
-          ))}
+        <div className={styles.header}>
+          <h2 className={styles.name}> {item.name} </h2>
+          <div className={styles.attributes}>
+            {item.attributes.map((attribute) => (
+              <span key={attribute}>{attribute}</span>
+            ))}
+          </div>
         </div>
-        <div>
+
+        <div className={styles.attributes}>
+          {item.cost && (
+            <span>
+              ${item.cost.min}–${item.cost.max}/person
+            </span>
+          )}
+
           {item.schedule && (
             <p className={styles.schedule}>
               {item.schedule.start}

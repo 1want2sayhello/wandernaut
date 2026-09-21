@@ -95,6 +95,7 @@ const Map = () => {
               name: place.name,
               description: place.description,
               attributes: place.attributes,
+              cost: place.cost,
             });
           });
 
@@ -133,6 +134,7 @@ const Map = () => {
               description: event.description,
               schedule: event.schedule,
               attributes: event.attributes,
+              cost: event.cost,
             });
           });
 
