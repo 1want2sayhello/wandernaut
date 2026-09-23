@@ -3,11 +3,16 @@
 .menu {
   position: absolute;
   height: 100vh;
-  width: 45vw;
-  background-color: $black;
+
+  width: 48vw;
+  min-width: 185px;
+  max-width: 480px;
+  background-color: $periwinkle;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   z-index: 100;
 
@@ -15,69 +20,167 @@
 
   transform: translateX(-100%);
   transition: transform 0.3s ease;
-}
-
-.open {
-  transform: translateX(0);
-
-  pointer-events: auto;
-}
-
-.menuNav {
-  position: relative;
-  background-color: rgba($white, 0.115);
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
   color: $white;
+  container-type: inline-size;
 }
 
 .closeBtn {
   position: absolute;
-  top: 20px;
-  right: 10px;
-  padding: 0.5rem;
-  font-size: clamp(1.2rem, 2vw, 2rem);
-}
-
-.menuNav .item {
+  top: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.2rem;
 
-  cursor: pointer;
-  transition: 0.225s transform ease-in-out;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 1rem;
+
+  color: $white;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
-.menuNav .item:hover {
+.open {
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.nav {
+  width: 100%;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: clamp(1rem, 4%, 2rem);
+  gap: clamp(1.25rem, 2.5vh, 2rem);
+}
+
+.nav a {
+  color: $white;
+  text-decoration: none;
+  font-size: clamp(1rem, 1.25rem + 0.5vw, 1.5rem);
+  font-weight: 700;
+}
+
+.nav a:hover {
   transform: scale(1.1);
 }
 
-.menuNav .item img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  display: block;
+.settings {
+  height: 120px;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.accent {
-  background-color: rgba($white, 0.115);
-  flex: 1;
+.settingsHeader {
   width: 100%;
-
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.accent img {
+.settingsHeader img {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+.toggle {
+  width: 100px;
+  height: 25px;
+  background-color: $black;
+  border-radius: 25px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.slider {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  background-color: rgba($white, 0.875);
+  background-image: url("../../assets/icons/dark-mode-icon.svg");
+
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.toggleActive {
+  background-color: $white;
+}
+
+.sliderActive {
+  transform: translateX(73px);
+  background-image: url("../../assets/icons/light-mode-icon.svg");
+}
+
+.accent {
+  height: clamp(180px, 40vh, 320px);
+  flex-shrink: 0;
+  width: auto;
+}
+
+.wally {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  display: block;
+  object-position: bottom center;
 }
+
+@container (min-width: 350px) {
+  .wally {
+    height: 115%;
+    transform: translateY(10%);
+  }
+}
+
+/*
+
+ <aside className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
+      <button type="button" className={styles.closeBtn} onClick={onClose}>
+        X
+      </button>
+      <nav className={styles.nav}>
+        <Link to={"/"}> My Profile </Link>
+        <Link to={"/"}> Plot An Outing</Link>
+        <Link to={"/"}> My Outings </Link>
+        <Link to={"/"}> Favorite Spots </Link>
+        <Link to={"/"}> About </Link>
+      </nav>
+
+      <section className={styles.settings}>
+        <span className={styles.settingsHeader}>
+          Settings
+          <img src={SettingIcon} alt="" />
+        </span>
+
+        <div
+          className={`${styles.toggle} ${isDark ? styles.toggleActive : ""}`}
+          onClick={toggleDarkMode}
+        >
+          <span
+            className={`${styles.slider} ${isDark ? styles.sliderActive : ""}`}
+          ></span>
+        </div>
+      </section>
+
+      <div className={styles.accent}>
+        <img className={styles.wally} src={Wally} alt="wally holding flag" />
+      </div>
+    </aside>
+
+
+
+
+
+
+
+*/

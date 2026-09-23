@@ -8,6 +8,10 @@ import userLocationMarker from "../../assets/markers/user-marker.svg";
 import { getUpcomingEvents } from "../../utils/eventFilters";
 import MapCard, { type MapCardItem } from "../Cards/MapCard/MapCard";
 
+import type { Place } from "../../types/Place";
+import type { Event } from "../../types/Event";
+import type { ExploreFilter } from "../ExplorePanel/ExplorePanel";
+
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
@@ -18,10 +22,19 @@ const NA_Bounds: mapboxgl.LngLatBoundsLike = [
   [-55, 70],
 ];
 
-const Map = () => {
+type MapProps = {
+  activeFilter: ExploreFilter;
+};
+
+const Map = ({ activeFilter }: MapProps) => {
   const [selectedItem, setSelectedItem] = useState<MapCardItem | null>(null);
+
+  const [places, setPlaces] = useState<Place[]>([]);
+  const [events, setEvents] = useState<Event[]>([]);
+
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
+  const dataMarkersRef = useRef<mapboxgl.Marker[]>([]);
 
   const routerLocation = useLocation();
   const userLocation = routerLocation.state?.userLocation as
@@ -74,89 +87,15 @@ const Map = () => {
       }
 
       try {
-        const places = await fetchPlaces();
+        const placesData = await fetchPlaces();
 
-        const events = await fetchEvents();
-        const upcomingEvents = getUpcomingEvents(events);
+        const eventsData = await fetchEvents();
+        const upcomingEvents = getUpcomingEvents(eventsData);
 
-        // Place markers
-        places.forEach((place) => {
-          const markerElement = document.createElement("button");
-
-          markerElement.type = "button";
-          markerElement.className = styles.marker;
-
-          const markerImage = document.createElement("img");
-
-          markerImage.src = markerIcons[place.markerType];
-          markerImage.alt = "";
-          markerImage.draggable = false;
-
-          markerElement.appendChild(markerImage);
-
-          markerElement.addEventListener("click", () => {
-            console.log("PLACE CLICKED:", place);
-
-            setSelectedItem({
-              image: place.image,
-              name: place.name,
-              description: place.description,
-              attributes: place.attributes,
-              cost: place.cost,
-            });
-          });
-
-          new mapboxgl.Marker({
-            element: markerElement,
-            anchor: "bottom",
-          })
-            .setLngLat([
-              place.location.coordinates.lng,
-              place.location.coordinates.lat,
-            ])
-            .addTo(map);
-        });
-
-        // Event markers
-        upcomingEvents.forEach((event) => {
-          const markerElement = document.createElement("button");
-
-          markerElement.type = "button";
-          markerElement.className = styles.marker;
-
-          const markerImage = document.createElement("img");
-
-          markerImage.src = markerIcons[event.markerType];
-          markerImage.alt = "";
-          markerImage.draggable = false;
-
-          markerElement.appendChild(markerImage);
-
-          markerElement.addEventListener("click", () => {
-            console.log("EVENT CLICKED:", event);
-
-            setSelectedItem({
-              image: event.image,
-              name: event.name,
-              description: event.description,
-              schedule: event.schedule,
-              attributes: event.attributes,
-              cost: event.cost,
-            });
-          });
-
-          new mapboxgl.Marker({
-            element: markerElement,
-            anchor: "bottom",
-          })
-            .setLngLat([
-              event.venue.coordinates.lng,
-              event.venue.coordinates.lat,
-            ])
-            .addTo(map);
-        });
+        setPlaces(placesData);
+        setEvents(upcomingEvents);
       } catch (error) {
-        console.error("Unable to load map data:", error);
+        console.error("unable to load map data:", error);
       }
     });
 
@@ -165,6 +104,119 @@ const Map = () => {
       mapRef.current = null;
     };
   }, [userLocation]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+
+    if (!map) return;
+
+    setSelectedItem(null);
+
+    dataMarkersRef.current.forEach((marker) => marker.remove());
+    dataMarkersRef.current = [];
+
+    const showPlaces =
+      activeFilter === "all" ||
+      activeFilter === "places" ||
+      activeFilter === "featured";
+    const showEvents =
+      activeFilter === "all" ||
+      activeFilter === "events" ||
+      activeFilter === "featured";
+
+    const visiblePlaces =
+      activeFilter === "featured"
+        ? places.filter((place) => place.featured)
+        : places;
+
+    const visibleEvents =
+      activeFilter === "featured"
+        ? events.filter((event) => event.featured)
+        : events;
+
+    // Place markers
+    if (showPlaces) {
+      visiblePlaces.forEach((place) => {
+        const markerElement = document.createElement("button");
+
+        markerElement.type = "button";
+        markerElement.className = styles.marker;
+
+        const markerImage = document.createElement("img");
+
+        markerImage.src = markerIcons[place.markerType];
+        markerImage.alt = "";
+        markerImage.draggable = false;
+
+        markerElement.appendChild(markerImage);
+
+        markerElement.addEventListener("click", () => {
+          setSelectedItem({
+            image: place.image,
+            name: place.name,
+            description: place.description,
+            attributes: place.attributes,
+            cost: place.cost,
+          });
+        });
+
+        const marker = new mapboxgl.Marker({
+          element: markerElement,
+          anchor: "bottom",
+        })
+          .setLngLat([
+            place.location.coordinates.lng,
+            place.location.coordinates.lat,
+          ])
+          .addTo(map);
+
+        dataMarkersRef.current.push(marker);
+      });
+    }
+
+    // Event markers
+    if (showEvents) {
+      visibleEvents.forEach((event) => {
+        const markerElement = document.createElement("button");
+
+        markerElement.type = "button";
+        markerElement.className = styles.marker;
+
+        const markerImage = document.createElement("img");
+
+        markerImage.src = markerIcons[event.markerType];
+        markerImage.alt = "";
+        markerImage.draggable = false;
+
+        markerElement.appendChild(markerImage);
+
+        markerElement.addEventListener("click", () => {
+          setSelectedItem({
+            image: event.image,
+            name: event.name,
+            description: event.description,
+            schedule: event.schedule,
+            attributes: event.attributes,
+            cost: event.cost,
+          });
+        });
+
+        const marker = new mapboxgl.Marker({
+          element: markerElement,
+          anchor: "bottom",
+        })
+          .setLngLat([event.venue.coordinates.lng, event.venue.coordinates.lat])
+          .addTo(map);
+
+        dataMarkersRef.current.push(marker);
+      });
+    }
+
+    return () => {
+      dataMarkersRef.current.forEach((marker) => marker.remove());
+      dataMarkersRef.current = [];
+    };
+  }, [places, events, activeFilter]);
 
   return (
     <>

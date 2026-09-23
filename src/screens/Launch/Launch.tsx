@@ -22,6 +22,9 @@ const Launch = () => {
             <img src={lightArrow} alt="" />
           </button>
         </div>
+        <div className={styles.shootingStarContainer}>
+          <div className={styles.shootingStar} aria-hidden="true"></div>
+        </div>
 
         <div className={styles.hero}>
           <img src={wally} alt="wally hero" />

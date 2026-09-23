@@ -10,6 +10,9 @@ import styles from "./Explore.module.scss";
 
 const Explore = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeFilter, setActiveFilter] = useState<
+    "all" | "places" | "events" | "featured"
+  >("all");
   const handleMenuClick = () => {
     setMenuOpen((prev) => !prev);
   };
@@ -37,8 +40,11 @@ const Explore = () => {
         <div className={styles.backdrop} onClick={handleClose}></div>
       )}
       <Menu isOpen={menuOpen} onClose={handleClose} />
-      <Map />
-      <ExplorePanel />
+      <Map activeFilter={activeFilter} />
+      <ExplorePanel
+        activeFilter={activeFilter}
+        onFilterChange={setActiveFilter}
+      />
     </section>
   );
 };

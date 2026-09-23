@@ -1,7 +1,10 @@
-import SettingIcon from "../../assets/icons/settings.svg";
-import Wally from "../../assets/graphics/wally/wally-with-flag.svg";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import styles from "./Menu.module.scss";
+import SettingIcon from "../../assets/icons/settings.svg";
+import Wally from "../../assets/graphics/wally/wally-on-moon.svg";
+
+import styles from "./menuAlt.module.scss";
 
 type MenuProps = {
   isOpen: boolean;
@@ -9,25 +12,50 @@ type MenuProps = {
 };
 
 const Menu = ({ isOpen, onClose }: MenuProps) => {
-  return (
-    <aside className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
-      <nav className={styles.menuNav}>
-        <button type="button" className={styles.closeBtn} onClick={onClose}>
-          X
-        </button>
-        <span className={styles.item}>My Profile</span>
-        <span className={styles.item}> Plan an Outing </span>
-        <span className={styles.item}> My Outings </span>
-        <span className={styles.item}>
-          Settings
-          <img src={SettingIcon} alt="" />
-        </span>
-      </nav>
+  const [isDark, setIsDark] = useState(false);
 
-      <div className={styles.accent}>
-        <img src={Wally} alt="wally holding flag" />
-      </div>
-    </aside>
+  const toggleDarkMode = () => setIsDark(!isDark);
+
+  return (
+    <div
+      className={`${styles.backdrop} ${isOpen ? styles.backdropOpen : ""}`}
+      onClick={onClose}
+    >
+      <aside
+        className={`${styles.menu} ${isOpen ? styles.open : ""}`}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className={styles.closeButton}>
+          <button type="button" onClick={onClose}>
+            X
+          </button>
+        </div>
+
+        <div className={styles.content}>
+          <nav>
+            <Link to={"/"}> My Profile </Link>
+            <Link to={"/"}> Plot An Outing</Link>
+            <Link to={"/"}> My Outings </Link>
+            <Link to={"/"}> Favorite Spots </Link>
+            <Link to={"/"}> About </Link>
+          </nav>
+
+          <div className={styles.settings}>
+            <div className={styles.header}>
+              <h3> Settings </h3>
+              <img src={SettingIcon} alt="" />
+            </div>
+            <div className={styles.toggle}>
+              <div className={styles.slider}></div>
+            </div>
+          </div>
+
+          <div className={styles.accent}>
+            <img src={Wally} alt="Wally on the moon" />
+          </div>
+        </div>
+      </aside>
+    </div>
   );
 };
 
