@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import SettingIcon from "../../assets/icons/settings.svg";
 import Wally from "../../assets/graphics/wally/wally-on-moon.svg";
 
-import styles from "./menuAlt.module.scss";
+import styles from "./Menu.module.scss";
 
 type MenuProps = {
   isOpen: boolean;

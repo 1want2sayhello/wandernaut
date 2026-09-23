@@ -1,186 +1,158 @@
 @use "../../sass//variables" as *;
 
-.menu {
-  position: absolute;
-  height: 100vh;
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba($black, 0.475);
+  z-index: 99;
 
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.3s ease;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 100dvh;
   width: 48vw;
-  min-width: 185px;
   max-width: 480px;
   background-color: $periwinkle;
 
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   z-index: 100;
 
-  pointer-events: none;
-
   transform: translateX(-100%);
   transition: transform 0.3s ease;
-  color: $white;
-  container-type: inline-size;
 }
 
-.closeBtn {
-  position: absolute;
-  top: 0;
-  width: 100%;
-
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding: 1rem;
-
-  color: $white;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+.backdropOpen {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .open {
   transform: translateX(0);
-  pointer-events: auto;
 }
 
-.nav {
+.closeButton {
   width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 1rem;
+}
+
+.closeButton button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  border: 3px solid $black;
+  background-color: $dark-purple;
+  box-shadow:
+    0px 2px $black,
+    inset -6px 2px 6px rgba($black, 0.475);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
+
+.content {
   flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu nav {
+  flex: 1;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: clamp(1rem, 4%, 2rem);
-  gap: clamp(1.25rem, 2.5vh, 2rem);
+  gap: 1.2rem;
+  padding: 1rem;
 }
 
-.nav a {
+.menu nav a {
   color: $white;
+  font-size: clamp(1.2rem, 2vw, 2.2rem);
   text-decoration: none;
-  font-size: clamp(1rem, 1.25rem + 0.5vw, 1.5rem);
-  font-weight: 700;
-}
-
-.nav a:hover {
-  transform: scale(1.1);
 }
 
 .settings {
-  height: 120px;
+  flex: 1;
+  width: 100%;
+
   display: flex;
-  flex-shrink: 0;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
+  gap: 0.8rem;
 }
 
-.settingsHeader {
+.settings .header {
   width: 100%;
-  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0.4rem;
+
+  color: $white;
 }
 
-.settingsHeader img {
-  width: 25px;
-  height: 25px;
+.settings .header h3 {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  letter-spacing: 0.125rem;
+  margin: 0;
+}
+
+.settings .header img {
+  width: 22px;
+  height: 22px;
   display: block;
+  object-fit: contain;
 }
 
 .toggle {
+  border-radius: 28px;
   width: 100px;
   height: 25px;
   background-color: $black;
-  border-radius: 25px;
-  padding: 2px;
   cursor: pointer;
 }
 
 .slider {
-  display: block;
-
-  width: 24px;
-  height: 24px;
-
-  border-radius: 50%;
-  background-color: rgba($white, 0.875);
-  background-image: url("../../assets/icons/dark-mode-icon.svg");
-
-  transform: translateX(0);
-  transition: transform 0.3s ease;
-}
-
-.toggleActive {
+  width: 25px;
+  height: 25px;
+  padding: 4px;
   background-color: $white;
-}
-
-.sliderActive {
-  transform: translateX(73px);
-  background-image: url("../../assets/icons/light-mode-icon.svg");
+  border-radius: 50%;
+  transform: translateX(2px);
 }
 
 .accent {
-  height: clamp(180px, 40vh, 320px);
-  flex-shrink: 0;
-  width: auto;
+  flex: 1;
+  width: 100%;
+  margin-top: auto;
 }
 
-.wally {
+.accent img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  display: block;
+  transform: translateY(clamp(30px, 7vh, 100px));
   object-position: bottom center;
 }
-
-@container (min-width: 350px) {
-  .wally {
-    height: 115%;
-    transform: translateY(10%);
-  }
-}
-
-/*
-
- <aside className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
-      <button type="button" className={styles.closeBtn} onClick={onClose}>
-        X
-      </button>
-      <nav className={styles.nav}>
-        <Link to={"/"}> My Profile </Link>
-        <Link to={"/"}> Plot An Outing</Link>
-        <Link to={"/"}> My Outings </Link>
-        <Link to={"/"}> Favorite Spots </Link>
-        <Link to={"/"}> About </Link>
-      </nav>
-
-      <section className={styles.settings}>
-        <span className={styles.settingsHeader}>
-          Settings
-          <img src={SettingIcon} alt="" />
-        </span>
-
-        <div
-          className={`${styles.toggle} ${isDark ? styles.toggleActive : ""}`}
-          onClick={toggleDarkMode}
-        >
-          <span
-            className={`${styles.slider} ${isDark ? styles.sliderActive : ""}`}
-          ></span>
-        </div>
-      </section>
-
-      <div className={styles.accent}>
-        <img className={styles.wally} src={Wally} alt="wally holding flag" />
-      </div>
-    </aside>
-
-
-
-
-
-
-
-*/
