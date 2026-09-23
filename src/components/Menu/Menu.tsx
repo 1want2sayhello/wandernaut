@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import SettingIcon from "../../assets/icons/settings.svg";
@@ -12,10 +11,6 @@ type MenuProps = {
 };
 
 const Menu = ({ isOpen, onClose }: MenuProps) => {
-  const [isDark, setIsDark] = useState(false);
-
-  const toggleDarkMode = () => setIsDark(!isDark);
-
   return (
     <div
       className={`${styles.backdrop} ${isOpen ? styles.backdropOpen : ""}`}
